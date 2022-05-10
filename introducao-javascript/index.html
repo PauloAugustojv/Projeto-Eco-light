@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Eco-light</title>
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+
+	</head>
+
+
+	<body>
+
+		<header>	
+			<div class="container">
+				<h1 class="tituto"> Eco-light</h1>
+			</div>
+		</header>
+		<main>	
+			<section class="container">
+				<h2>TABELA DE CONSUMO</h2>
+				<table>
+					<thead>
+						<tr>
+							<th>Aparelho</th>
+							<th>Horas por dia - USO</th>
+							<th>Dias de Uso - NO MÊS</th>
+							<th>Potencia em Whatts</th>
+							<th>Total do consumo</th>
+						</tr>
+					</thead>
+					<tbody id="tabela-pacientes">
+						<tr class="paciente" id="primeiro-paciente">
+							<td class="info-nome" >TV</td>
+							<td class="info-peso">10</td>
+							<td class="info-altura">223.00</td>
+							<td class="info-gordura">10</td>
+							<td class="info-imc">0</td>
+						</tr>
+
+						<tr class="paciente" id = "segundo-paciente" >
+							<td class="info-nome">GELADEIRA</td>
+							<td class="info-peso">80</td>
+							<td class="info-altura">1.72</td>
+							<td class="info-gordura">40</td>
+							<td class="info-imc">0</td>
+						</tr>	
+
+						<tr class="paciente" id = "terceiro-paciente">
+							<td class="info-nome">COMPUTADOR</td>
+							<td class="info-peso">54</td>
+							<td class="info-altura">1.64</td>
+							<td class="info-gordura">14</td>
+							<td class="info-imc">0</td>
+						</tr>
+
+						<tr class="paciente" id = "quarto-paciente" >
+							<td class="info-nome">VIDEO-GAME</td>
+							<td class="info-peso">85</td>
+							<td class="info-altura">1.73</td>
+							<td class="info-gordura">24</td>
+							<td class="info-imc">0</td>
+						</tr>
+						<tr class="paciente" id = "quinto-paciente" >
+							<td class="info-nome">AR CONDICIONADO</td>
+							<td class="info-peso">46</td>
+							<td class="info-altura">1.55</td>
+							<td class="info-gordura">19</td>
+							<td class="info-imc">0</td>
+						</tr>
+					</tbody>
+				</table>
+
+			</section>
+		</main>
+		<!-- ... -->
+<section class="container">
+    <h2 id="titulo-form">Adicionar um Aparelho</h2>
+	<ul id = "mensagens-erro"> 
+
+	</ul>
+    <form id="form-adiciona" method="POST" action="calcula-consumo.php">
+        <div class="grupo">
+            <label for="nome">Potencia - WATTS</label>
+            <input id="potencia" name="potencia" type="text" placeholder="digite a potencia em Whatts" class="campo">
+        </div>
+        <div class="grupo">
+            <label for="peso">Horas por dia - USO</label>
+            <input id="horas-dia" name="horas-dia" type="text" placeholder="digite as horas por dia" class="campo campo-medio">
+        </div>	
+        <div class="grupo">
+            <label for="altura">Dias de Uso - NO MÊS</label>
+            <input id="dias-uso" name="dias-uso" type="text" placeholder="digite os dias de uso" class="campo campo-medio">
+        </div>
+		<div class="grupo">
+            <label for="altura">Aparelho</label>
+            <input id="aparelho" name="aparelho" type="text" placeholder="digite o aparelho" class="campo campo-medio">
+        </div>
+        
+        <button id="adicionar-paciente" class="botao bto-principal">Adicionar</button>
+    </form>
+
+	
+</section>
+
+        <script src =C:\Users\pauli\OneDrive\Documentos\introducao-javascript-inicial\introducao-javascript\js\form.js></script>
+		<script src =C:\Users\pauli\OneDrive\Documentos\introducao-javascript-inicial\introducao-javascript\js\principal.js></script>
+		<script src =C:\Users\pauli\OneDrive\Documentos\introducao-javascript-inicial\introducao-javascript\js\calcula-imc.js> </script>
+		<script src =C:\Users\pauli\OneDrive\Documentos\introducao-javascript-inicial\introducao-javascript\js\remover-paciente.js> </script>
+
+	</body>
+</html>
